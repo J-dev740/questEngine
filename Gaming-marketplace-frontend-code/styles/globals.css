@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,900&family=Montserrat:ital,wght@1,300&family=Nosifer&family=Plus+Jakarta+Sans:wght@700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Merriweather:ital,wght@1,300;1,400;1,900&family=Montserrat:ital,wght@1,300&family=Nosifer&family=Plus+Jakarta+Sans:wght@700&family=Sacramento&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#background-image {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://emerging-europe.com/wp-content/uploads/2021/01/ss-b3685fcab4d6f60c9fd54ffe8757ccaaef803d9e1920x1080.jpg);
+	background-size: cover;
+	backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+  }
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+
+.slick-dots li.slick-active button:before {
+	color:White !important;
+	/* opacity: .25 !important; */
+}
+
+.slick-dots li button:before {
+	color:#626262 !important;
+	opacity: 1 !important;
+	
+}
+
+.gradient {
+	background: linear-gradient(to right,	#296BBD, #AC85FF);
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gradient span{
+	background:#111111;
+	border-radius: 20px;
+	margin: 2px;
+}
+
+  .gradient-border {
+	display: block;
+	background: linear-gradient(to right,	#296BBD, #AC85FF);
+	background-size: 200% 100%;
+	background-position: left center;
+	text-align: center;
+	border-radius: 20px;
+	color: #fff;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255,255,255,0.001);
+	transition: 256ms all;
+	position: relative;
+	cursor: pointer;
+  }
+  
+  .gradient-border:before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+	background: linear-gradient(to right ,	#296BBD, #AC85FF);
+	transition: 256ms all;
+	z-index: -1;
+	background-size: 200% 100%;
+	background-position: left center;
+  }
+  
+  .gradient-border:after {
+	background: rgb(24,24,24);
+	content: '';
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+  }
+  
+  .gradient-border,
+  .gradient-border:before {
+	background-position: right center;
+  }
+/* .slick-dots{
+	color:#626262 !important;
+} */

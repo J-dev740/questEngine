@@ -1,0 +1,2 @@
+[alias]
+  push-no-lint = "!git push origin task-button-refactor"

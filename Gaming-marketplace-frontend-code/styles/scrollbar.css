@@ -1,0 +1,40 @@
+/* scrollbar thumb */
+::-webkit-scrollbar-thumb {
+	background-color: black; /* customize with desired blue color */
+	border-radius: 16px;
+	/* customize with desired blue color */
+}
+
+/* scrollbar track */
+::-webkit-scrollbar-track {
+	background: transparent;
+	/* customize with desired background color */
+	border-radius: 5px;
+}
+
+/* Firefox */
+* {
+	scrollbar-width: 8px;
+	scrollbar-color: white;
+}
+
+*::-moz-scrollbar {
+	scrollbar-width: 8px;
+	scrollbar-color: white;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: black;
+	border-radius: 16px;
+}
